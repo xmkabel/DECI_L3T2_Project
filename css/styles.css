@@ -66,6 +66,7 @@ section {
     padding-left: 0;
     margin: 0;
     text-align: right;
+    display: flex;
 }
 
 .navbar__menu li {
