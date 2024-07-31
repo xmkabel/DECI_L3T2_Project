@@ -79,6 +79,7 @@ section {
     font-weight: bold;
     text-decoration: none;
     color: #171a53;
+    cursor: pointer;
 }
 
 .navbar__menu .menu__link:hover {
