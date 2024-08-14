@@ -18,12 +18,19 @@
   <header class="page__header">
     <nav class="navbar__menu">
       <!-- Navigation starts as empty UL that will be populated with JS -->
-      <ul id="navbar__list"></ul>
+      <div class="menuBtn" onclick="showNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <ul id="navbar__list">
+
+      </ul>
     </nav>
   </header>
   <main>
     <header class="main__hero">
-      <h1>Dynamic Web Page</h1>
+      <h1>Not Dynamic Landing Page</h1>
     </header>
     <!-- Each Section has an ID (used for the anchor) and
     a data attribute that will populate the li node.
@@ -109,6 +116,21 @@
           porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
       </div>
     </section>
+    <section id="comments" data-nav="Comments">
+      <div class="landing__container">
+        <h2>Comments</h2>
+        <div id="commentsList">
+
+        </div>
+
+        <form id="commentsForm">
+          <input id="commentAuthorInput" name="author" type="text" placeholder="Name" required>
+          <input id="commentEmailInput" name="email" type="email" placeholder="Email" required>
+          <textarea id="commentTextInput" placeholder="Write a comment..." required></textarea>
+          <button type="submit">Post Comment</button>  
+        </form>
+      </div>
+    </section>
 
   </main>
   <footer class="page__footer">
@@ -118,11 +140,5 @@
 
   <script src="js/app.js"></script>
 </body>
-<!-- TODO:
-  - Load the JavaScript file
-  - Add one or more new sections to the page
-
-  DONE
--->
 
 </html>

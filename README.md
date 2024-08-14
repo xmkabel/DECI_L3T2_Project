@@ -1,13 +1,46 @@
-# Dynamic Web Page Project
+# DECI_L3T2_Project
 
-This project requires you to build a multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page.
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Features](#features)
+- [License](#license)
+- [Contact](#contact)
 
----
+## Project Overview
+This project involves creating a dynamic multi-section landing page. The page includes a navigation menu that updates based on the content added, transforming the site from a static HTML page into a more interactive experience using JavaScript.
 
-## Instructions
+## Features
+- Responsive navbar with dynamic updates.
+- Interactive comment section with form submission.
+- Smooth scrolling between sections.
+- Mobile-friendly design.
 
-The starter project has some HTML and CSS styling to display a static version of the Dynamic Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/xmkabel/DECI_L3T2_Project.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd DECI_L3T2_Project
+   ```
+3. Open `index.html` in your browser to view the project.
 
-For more detailed requirements, see the project instructions in the Udacity Classroom.
+## Features
+- The navigation bar automatically updates as new sections are added to the page.
+- The comment section allows users to submit comments via a form.
+
+## License
+This project is licensed under the MIT License.
+
+## Contact
+- GitHub: [xmkabel](https://github.com/xmkabel)
+- Linkedin : [mohamedkabel](https://linkedin.com/in/mohamedkabel)

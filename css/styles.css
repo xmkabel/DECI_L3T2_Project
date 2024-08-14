@@ -32,8 +32,7 @@ h1 {
     h1 {
         font-size: 7em;
         margin: 1em 4rem 0;
-    }
-}
+    }}
 
 h2 {
     border-bottom: 3px solid #b181ff;
@@ -66,6 +65,7 @@ section {
     padding-left: 0;
     margin: 0;
     text-align: right;
+    display: flex;
 }
 
 .navbar__menu li {
@@ -78,6 +78,7 @@ section {
     font-weight: bold;
     text-decoration: none;
     color: #171a53;
+    cursor: pointer;
 }
 
 .navbar__menu .menu__link:hover {
@@ -86,6 +87,52 @@ section {
     transition: ease 0.3s all;
 }
 
+.menuBtn {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #171a53;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+.navHidden{
+    display: flex !important;
+}
+.menuBtn{
+    display: none;
+}
+@media screen and (max-width: 600px) {  
+    .navbar__menu ul {
+        flex-direction: column;
+        display: none;
+    }
+    .navbar__menu li {
+    text-align: left;
+    }
+    .menuBtn{
+        display: inline-block;
+        position: absolute;
+        right:0;
+        margin: 2rem;
+    }
+  }
 /* Header Styles */
 .page__header {
     background: #fff;
@@ -273,4 +320,85 @@ section.active .landing__container::after {
     }
 }
 
-/* TODO: Add styles for Comments section and form */
+/* Comments */
+#comments div{
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    text-align: left !important;
+}
+
+#commentsForm{
+    display: flex;
+    flex-direction: column;
+    }
+
+#comments input,textarea{
+    font-weight:500;
+	border-radius: 0;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 22px;
+	margin-bottom: 3px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+    border: 3px solid #000;
+}
+
+#comments input:focus,textarea:focus{
+    background: #fff;
+	box-shadow: 0;
+	border: 3px solid #2015ff;
+	outline: none;
+}
+
+#comments button{
+    float:left;
+	width: 100%;
+	border: #000 solid 4px;
+	cursor:pointer;
+	background-color: #2015ff;
+	color:white;
+	padding-top:12px;
+	padding-bottom:12px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  font-weight:700;
+}
+
+#comments button:hover{
+    background-color: #FFF;
+    color: #2015ff;
+    border-color: white;
+}
+
+.comment-box {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #5b5bc5;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    color: #3a3a3a;
+    box-sizing: border-box;
+}
+
+.comment-text {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #1f1f1f; /* Darker color for better readability */
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-bottom: -1.2rem;
+    color: #000000; /* Stronger color for the author's name */
+}
+
+.comment-email {
+    font-style: normal;
+    color: #000000; /* Normal font style for the email address */
+}
